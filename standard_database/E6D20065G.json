@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "manufacturer": "Wolfspeed",
+    "type": "Diode",
+    "material": "SiC",
+    "package_type": "discrete",
+    "part_number": "E6D20065G",
+    "author": "Fulong Li",
+    "date": "2026-01-11 19:32:51",
+    "source_file": "E6D20065G.xml",
+    "source_path": "SiC\\Wolfspeed\\Diodes\\E6D20065G.xml"
+  },
+  "library": {
+    "xmlns": "",
+    "version": "1.1"
+  },
+  "package": {
+    "class": "Diode",
+    "vendor": "Wolfspeed",
+    "partnumber": "E6D20065G",
+    "semiconductor_data": {
+      "type": "Diode",
+      "turn_on_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "turn_off_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "conduction_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          -5.0,
+          0.0,
+          0.01,
+          0.05,
+          0.1,
+          0.5,
+          1.0,
+          2.0,
+          5.0,
+          10.0,
+          15.0,
+          35.0,
+          55.0,
+          75.0,
+          95.0,
+          115.0,
+          135.0,
+          135.0
+        ],
+        "temperature_axis": [
+          -55.0,
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          900.0
+        ],
+        "voltage_drop": {
+          "scale": 1.0,
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      }
+    },
+    "thermal_model": {
+      "type": "Cauer",
+      "rc_elements": [
+        {
+          "R": 0.040824,
+          "C": 0.00021645
+        },
+        {
+          "R": 0.086925,
+          "C": 0.0011002
+        },
+        {
+          "R": 0.28666,
+          "C": 0.0021071
+        },
+        {
+          "R": 0.2233,
+          "C": 0.0056198
+        }
+      ]
+    },
+    "comment": [
+      "Version 1.1 → Date: 04/2024. It is the customer's responsibility to verify the performance of the device with actual prototype."
+    ]
+  }
+}

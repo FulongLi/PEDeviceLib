@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "manufacturer": "Wolfspeed",
+    "type": "Diode",
+    "material": "SiC",
+    "package_type": "discrete",
+    "part_number": "C6D16065H",
+    "author": "Fulong Li",
+    "date": "2026-01-11 19:32:51",
+    "source_file": "C6D16065H.xml",
+    "source_path": "SiC\\Wolfspeed\\Diodes\\C6D16065H.xml"
+  },
+  "library": {
+    "xmlns": "",
+    "version": "1.1"
+  },
+  "package": {
+    "class": "Diode",
+    "vendor": "Wolfspeed",
+    "partnumber": "C6D16065H",
+    "semiconductor_data": {
+      "type": "Diode",
+      "turn_on_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "turn_off_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "conduction_loss": {
+        "computation_method": "Table only",
+        "formula": "0.95 + (T*-1.2e-3) + i*(0.054 + (T*5.5e-4))",
+        "current_axis": [
+          -5.0,
+          0.0,
+          0.08,
+          0.5,
+          2.0,
+          4.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0
+        ],
+        "temperature_axis": [
+          -55.0,
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          900.0
+        ],
+        "voltage_drop": {
+          "scale": 1.0,
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      }
+    },
+    "thermal_model": {
+      "type": "Cauer",
+      "rc_elements": [
+        {
+          "R": 0.042489531,
+          "C": 0.000180494
+        },
+        {
+          "R": 0.089884135,
+          "C": 0.000783602
+        },
+        {
+          "R": 0.459393141,
+          "C": 0.002028045
+        },
+        {
+          "R": 0.311774446,
+          "C": 0.0184473
+        }
+      ]
+    },
+    "comment": [
+      "Datasheet Rev1, 02-2024. It is customer's responsibility to verify the performance of the Mosfet with actual prototype. "
+    ]
+  }
+}

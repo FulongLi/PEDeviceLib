@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.1">
+    <Package class="MOSFET with Diode" vendor="Wolfspeed" partnumber="EDB010M12TM4">
+        <Variables>
+            <Variable>
+                <Name>Rgon</Name>
+                <Description>External gate resistance (turn-on)</Description>
+                <DefaultValue>4</DefaultValue>
+            </Variable>
+            <Variable>
+                <Name>Rgoff</Name>
+                <Description>External gate resistance (turn-off)</Description>
+                <DefaultValue>2</DefaultValue>
+            </Variable>
+        </Variables>
+        <CustomTables>
+            <Table numDimensions="4">
+                <Name>Eon</Name>
+                <Axis> -10 0 5 25 50 75 100 200 300</Axis>
+                <Axis> -10 0 400 600 800</Axis>
+                <Axis> 25 75 125 175 200 200 1000</Axis>
+                <Axis> 1 2 4 6.8 10</Axis>
+                <FunctionValues scale="1">
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.15592 0.20196 0.26857 0.34525 0.43201 0.87976 1.48865</Dimension>
+                            <Dimension> 0 0 0.30961 0.39377 0.51537 0.65518 0.81320 1.62738 2.73291</Dimension>
+                            <Dimension> 0 0 0.52103 0.63197 0.81163 1.03682 1.30755 2.84581 5.11266</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.15400 0.20015 0.26675 0.34326 0.42967 0.87438 1.47760</Dimension>
+                            <Dimension> 0 0 0.36518 0.42341 0.52033 0.64406 0.79460 1.66491 2.96424</Dimension>
+                            <Dimension> 0 0 0.56573 0.66170 0.82553 1.03811 1.29943 2.83221 5.14495</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.17579 0.21949 0.28441 0.36076 0.44854 0.91395 1.56224</Dimension>
+                            <Dimension> 0 0 0.32586 0.41217 0.54476 0.70480 0.89230 1.91681 3.38057</Dimension>
+                            <Dimension> 0 0 0.50704 0.66745 0.90602 1.18690 1.51008 3.22576 5.61822</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.16474 0.21688 0.29504 0.38763 0.49463 1.06688 1.86989</Dimension>
+                            <Dimension> 0 0 0.29236 0.41907 0.60433 0.81946 1.06447 2.34318 4.09979</Dimension>
+                            <Dimension> 0 0 0.50693 0.72381 1.03974 1.40548 1.82103 3.98134 6.93862</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18203 0.23258 0.31253 0.41111 0.52831 1.18337 2.13644</Dimension>
+                            <Dimension> 0 0 0.32763 0.45677 0.65179 0.88416 1.15386 2.60607 4.65570</Dimension>
+                            <Dimension> 0 0 0.50072 0.74626 1.10243 1.51335 1.97899 4.38890 7.67453</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18203 0.23258 0.31253 0.41111 0.52831 1.18337 2.13644</Dimension>
+                            <Dimension> 0 0 0.32763 0.45677 0.65179 0.88416 1.15386 2.60607 4.65570</Dimension>
+                            <Dimension> 0 0 0.50072 0.74626 1.10243 1.51335 1.97899 4.38890 7.67453</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20024 0.25584 0.34379 0.45222 0.58114 1.30171 2.35008</Dimension>
+                            <Dimension> 0 0 0.36039 0.50244 0.71697 0.97257 1.26925 2.86667 5.12127</Dimension>
+                            <Dimension> 0 0 0.55079 0.82088 1.21268 1.66468 2.17689 4.82779 8.44198</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18376 0.24685 0.34114 0.45257 0.58114 1.26684 2.22680</Dimension>
+                            <Dimension> 0 0 0.39130 0.50027 0.67483 0.89202 1.15181 2.61717 4.76438</Dimension>
+                            <Dimension> 0 0 0.61617 0.79285 1.06718 1.40092 1.79408 3.96088 7.07834</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20039 0.25445 0.33951 0.44400 0.56791 1.25781 2.25852</Dimension>
+                            <Dimension> 0 0 0.33809 0.45528 0.63828 0.86183 1.12593 2.58789 4.69872</Dimension>
+                            <Dimension> 0 0 0.58962 0.76453 1.03785 1.37192 1.76674 3.95356 7.11243</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.17839 0.24458 0.34475 0.46428 0.60317 1.35237 2.41137</Dimension>
+                            <Dimension> 0 0 0.32709 0.45935 0.65936 0.89791 1.17500 2.66877 4.77918</Dimension>
+                            <Dimension> 0 0 0.60170 0.79882 1.10277 1.47068 1.90254 4.26949 7.65968</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.17095 0.25512 0.37972 0.52587 0.69356 1.57976 2.81066</Dimension>
+                            <Dimension> 0 0 0.34519 0.50603 0.74731 1.03331 1.36402 3.13397 5.61932</Dimension>
+                            <Dimension> 0 0 0.53855 0.82723 1.24510 1.72633 2.27092 5.08281 8.90840</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20313 0.28142 0.40319 0.55150 0.72636 1.69129 3.08098</Dimension>
+                            <Dimension> 0 0 0.29124 0.49836 0.79576 1.13595 1.51893 3.47872 6.12312</Dimension>
+                            <Dimension> 0 0 0.63853 0.92981 1.35907 1.86072 2.43476 5.45481 9.63311</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20313 0.28142 0.40319 0.55150 0.72636 1.69129 3.08098</Dimension>
+                            <Dimension> 0 0 0.29124 0.49836 0.79576 1.13595 1.51893 3.47872 6.12312</Dimension>
+                            <Dimension> 0 0 0.63853 0.92981 1.35907 1.86072 2.43476 5.45481 9.63311</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.22344 0.30957 0.44351 0.60665 0.79900 1.86042 3.38908</Dimension>
+                            <Dimension> 0 0 0.32037 0.54819 0.87534 1.24955 1.67082 3.82659 6.73543</Dimension>
+                            <Dimension> 0 0 0.70238 1.02279 1.49498 2.04679 2.67823 6.00030 10.5964</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19325 0.32033 0.50450 0.71679 0.95721 2.20019 3.89323</Dimension>
+                            <Dimension> 0 0 0.37613 0.58917 0.89955 1.25890 1.66721 3.79013 6.69651</Dimension>
+                            <Dimension> 0 0 0.63872 0.95151 1.41084 1.94608 2.55724 5.76109 10.1797</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.17533 0.30166 0.48323 0.69108 0.92521 2.12451 3.74427</Dimension>
+                            <Dimension> 0 0 0.33377 0.55981 0.88365 1.25336 1.66895 3.79008 6.64522</Dimension>
+                            <Dimension> 0 0 0.47190 0.82815 1.33091 1.89751 2.52794 5.68801 9.86944</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19369 0.31208 0.48580 0.68814 0.91907 2.12888 3.79638</Dimension>
+                            <Dimension> 0 0 0.29550 0.54370 0.89542 1.29320 1.73706 3.97315 6.94633</Dimension>
+                            <Dimension> 0 0 0.46869 0.85243 1.39083 1.99446 2.66334 5.99127 10.3631</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18201 0.32338 0.52626 0.75821 1.01924 2.35404 4.15399</Dimension>
+                            <Dimension> 0 0 0.29408 0.57575 0.97250 1.41889 1.91491 4.39535 7.66993</Dimension>
+                            <Dimension> 0 0 0.44378 0.89567 1.52367 2.22183 2.99016 6.76513 11.6627</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18138 0.33371 0.55179 0.80060 1.08015 2.50575 4.42315</Dimension>
+                            <Dimension> 0 0 0.35258 0.62974 1.02899 1.48688 2.00342 4.65605 8.24704</Dimension>
+                            <Dimension> 0 0 0.47010 0.87437 1.59814 2.38780 3.24335 7.32432 12.4594</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18138 0.33371 0.55179 0.80060 1.08015 2.50575 4.42315</Dimension>
+                            <Dimension> 0 0 0.35258 0.62974 1.02899 1.48688 2.00342 4.65605 8.24704</Dimension>
+                            <Dimension> 0 0 0.47010 0.87437 1.59814 2.38780 3.24335 7.32432 12.4594</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19952 0.36708 0.60697 0.88066 1.18817 2.75632 4.86546</Dimension>
+                            <Dimension> 0 0 0.38783 0.69272 1.13189 1.63557 2.20376 5.12166 9.07174</Dimension>
+                            <Dimension> 0 0 0.51711 0.96180 1.75796 2.62658 3.56768 8.05675 13.7053</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19486 0.39754 0.67854 0.99026 1.33271 3.00975 5.17838</Dimension>
+                            <Dimension> 0 0 0.28771 0.66548 1.18384 1.75347 2.37438 5.37077 9.18755</Dimension>
+                            <Dimension> 0 0 0.51440 1.04993 1.78818 2.60292 3.49416 7.82406 13.3779</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.22750 0.40956 0.66816 0.96123 1.28877 2.94364 5.15004</Dimension>
+                            <Dimension> 0 0 0.34078 0.67994 1.15356 1.68235 2.26631 5.15390 8.92428</Dimension>
+                            <Dimension> 0 0 0.48951 1.01037 1.73097 2.52883 3.40395 7.67702 13.1862</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.16311 0.36691 0.64951 0.96305 1.30754 2.99489 5.17730</Dimension>
+                            <Dimension> 0 0 0.33152 0.67381 1.15409 1.69260 2.28935 5.25866 9.15972</Dimension>
+                            <Dimension> 0 0 0.49718 1.03557 1.78078 2.60623 3.51192 7.93708 13.6461</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18071 0.39378 0.69103 1.02265 1.38864 3.19625 5.55372</Dimension>
+                            <Dimension> 0 0 0.24448 0.66074 1.22960 1.85239 2.52911 5.77531 9.88441</Dimension>
+                            <Dimension> 0 0 0.36823 1.01456 1.89006 2.84065 3.86635 8.72009 14.7754</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19882 0.41260 0.71481 1.05590 1.43586 3.34453 5.87527</Dimension>
+                            <Dimension> 0 0 0.29300 0.71218 1.29122 1.93144 2.63286 6.05039 10.4469</Dimension>
+                            <Dimension> 0 0 0.30947 1.02009 1.97583 3.00654 4.11221 9.28455 15.6564</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19882 0.41260 0.71481 1.05590 1.43586 3.34453 5.87527</Dimension>
+                            <Dimension> 0 0 0.29300 0.71218 1.29122 1.93144 2.63286 6.05039 10.4469</Dimension>
+                            <Dimension> 0 0 0.30947 1.02009 1.97583 3.00654 4.11221 9.28455 15.6564</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.21871 0.45386 0.78629 1.16148 1.57945 3.67898 6.46280</Dimension>
+                            <Dimension> 0 0 0.32230 0.78340 1.42034 2.12459 2.89614 6.65542 11.4916</Dimension>
+                            <Dimension> 0 0 0.34042 1.12210 2.17341 3.30719 4.52343 10.2130 17.2220</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.18311 0.47195 0.86439 1.29173 1.75396 3.95178 6.70785</Dimension>
+                            <Dimension> 0 0 0.29952 0.80699 1.49298 2.23638 3.03719 6.81452 11.5104</Dimension>
+                            <Dimension> 0 0 0.32312 1.14509 2.23034 3.37978 4.59343 10.0901 16.6140</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.19919 0.45411 0.80901 1.20417 1.63959 3.78388 6.57236</Dimension>
+                            <Dimension> 0 0 0.36610 0.80841 1.42124 2.10068 2.84674 6.49708 11.2132</Dimension>
+                            <Dimension> 0 0 0.44056 1.15685 2.12443 3.17223 4.30027 9.61471 16.2128</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20587 0.45615 0.80645 1.19833 1.63180 3.78161 6.59685</Dimension>
+                            <Dimension> 0 0 0.27635 0.76415 1.42758 2.15064 2.93334 6.66051 11.3419</Dimension>
+                            <Dimension> 0 0 0.35126 1.09783 2.10511 3.19469 4.36657 9.87708 16.7044</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.15349 0.44756 0.84974 1.29032 1.76933 4.06949 6.98430</Dimension>
+                            <Dimension> 0 0 0.32279 0.83244 1.53023 2.29552 3.12830 7.13434 12.2203</Dimension>
+                            <Dimension> 0 0 0.40060 1.19505 2.26883 3.43230 4.68546 10.5951 17.9397</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20286 0.48577 0.88026 1.32017 1.80549 4.20085 7.32276</Dimension>
+                            <Dimension> 0 0 0.32893 0.85845 1.58393 2.38006 3.24682 7.42035 12.7242</Dimension>
+                            <Dimension> 0 0 0.42920 1.25107 2.36500 3.57514 4.88150 11.0691 18.7961</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.20286 0.48577 0.88026 1.32017 1.80549 4.20085 7.32276</Dimension>
+                            <Dimension> 0 0 0.32893 0.85845 1.58393 2.38006 3.24682 7.42035 12.7242</Dimension>
+                            <Dimension> 0 0 0.42920 1.25107 2.36500 3.57514 4.88150 11.0691 18.7961</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.22315 0.53434 0.96829 1.45219 1.98604 4.62093 8.05503</Dimension>
+                            <Dimension> 0 0 0.36183 0.94430 1.74232 2.61806 3.57151 8.16239 13.9966</Dimension>
+                            <Dimension> 0 0 0.47212 1.37617 2.60150 3.93266 5.36965 12.1760 20.6757</Dimension>
+                        </Dimension>
+                    </Dimension>
+                </FunctionValues>
+            </Table>
+            <Table numDimensions="4">
+                <Name>Eoff</Name>
+                <Axis> -10 0 5 25 50 75 100 200 300</Axis>
+                <Axis> -10 0 400 600 800</Axis>
+                <Axis> 25 75 125 175 200 200 1000</Axis>
+                <Axis> 1 2 4 6.8 10</Axis>
+                <FunctionValues scale="1">
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00174 0.00872 0.06220 0.13594 0.22994 0.80849 1.71116</Dimension>
+                            <Dimension> 0 0 0.00262 0.01308 0.08640 0.19576 0.32983 1.11311 2.29161</Dimension>
+                            <Dimension> 0 0 0.00349 0.01744 0.11600 0.26053 0.43694 1.46137 2.99587</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00101 0.00504 0.05923 0.13323 0.22704 0.80033 1.69052</Dimension>
+                            <Dimension> 0 0 0.00120 0.00602 0.08704 0.19328 0.32475 1.10280 2.28437</Dimension>
+                            <Dimension> 0 0 0.00160 0.00802 0.11786 0.27003 0.45301 1.49298 3.02586</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00227 0.01133 0.06338 0.13599 0.22918 0.80760 1.71513</Dimension>
+                            <Dimension> 0 0 0.00340 0.01699 0.08624 0.19973 0.33814 1.14090 2.34225</Dimension>
+                            <Dimension> 0 0 0.00453 0.02265 0.11597 0.28186 0.47656 1.54338 3.07105</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00103 0.00516 0.06081 0.13676 0.23302 0.82105 1.73392</Dimension>
+                            <Dimension> 0 0 0.00155 0.00773 0.08648 0.20261 0.34367 1.15734 2.37007</Dimension>
+                            <Dimension> 0 0 0.00206 0.01031 0.12753 0.29473 0.49259 1.59080 3.17978</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00177 0.00884 0.06264 0.13836 0.23598 0.84560 1.80579</Dimension>
+                            <Dimension> 0 0 0.00265 0.01326 0.09185 0.20699 0.34903 1.18614 2.45358</Dimension>
+                            <Dimension> 0 0 0.00354 0.01768 0.12529 0.29635 0.49813 1.61235 3.21797</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00177 0.00884 0.06264 0.13836 0.23598 0.84560 1.80579</Dimension>
+                            <Dimension> 0 0 0.00265 0.01326 0.09185 0.20699 0.34903 1.18614 2.45358</Dimension>
+                            <Dimension> 0 0 0.00354 0.01768 0.12529 0.29635 0.49813 1.61235 3.21797</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00195 0.00973 0.06891 0.15219 0.25958 0.93016 1.98637</Dimension>
+                            <Dimension> 0 0 0.00292 0.01459 0.10104 0.22769 0.38393 1.30475 2.69894</Dimension>
+                            <Dimension> 0 0 0.00389 0.01945 0.13782 0.32599 0.54794 1.77358 3.53977</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00029 0.00144 0.10084 0.21996 0.35881 1.11141 2.17955</Dimension>
+                            <Dimension> 0 0 0.00191 0.00954 0.15983 0.33743 0.54234 1.63509 3.16480</Dimension>
+                            <Dimension> 0 0 0.00254 0.01272 0.22687 0.48189 0.76950 2.24593 4.24392</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02134 0.04268 0.09755 0.22033 0.36233 1.12244 2.18992</Dimension>
+                            <Dimension> 0 0 0.03527 0.07054 0.15967 0.34882 0.56367 1.67995 3.20727</Dimension>
+                            <Dimension> 0 0 0.04799 0.09598 0.21722 0.48247 0.77949 2.28529 4.29943</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02154 0.04309 0.09830 0.22174 0.36494 1.13532 2.22184</Dimension>
+                            <Dimension> 0 0 0.03345 0.06691 0.15256 0.35071 0.57203 1.68918 3.17725</Dimension>
+                            <Dimension> 0 0 0.00025 0.00127 0.23141 0.49516 0.79254 2.31825 4.38189</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02330 0.04660 0.10489 0.23008 0.37545 1.15872 2.26486</Dimension>
+                            <Dimension> 0 0 0.03612 0.07224 0.16258 0.35371 0.57201 1.71687 3.29638</Dimension>
+                            <Dimension> 0 0 0.05430 0.10860 0.24441 0.52415 0.83599 2.40430 4.48613</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00212 0.01062 0.10907 0.22953 0.37200 1.16188 2.30380</Dimension>
+                            <Dimension> 0 0 0.00318 0.01592 0.16128 0.37411 0.61008 1.78527 3.33059</Dimension>
+                            <Dimension> 0 0 0.00510 0.02551 0.26076 0.53061 0.83508 2.39900 4.51665</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00212 0.01062 0.10907 0.22953 0.37200 1.16188 2.30380</Dimension>
+                            <Dimension> 0 0 0.00318 0.01592 0.16128 0.37411 0.61008 1.78527 3.33059</Dimension>
+                            <Dimension> 0 0 0.00510 0.02551 0.26076 0.53061 0.83508 2.39900 4.51665</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00234 0.01168 0.11998 0.25249 0.40920 1.27807 2.53418</Dimension>
+                            <Dimension> 0 0 0.00350 0.01752 0.17740 0.41152 0.67109 1.96380 3.66365</Dimension>
+                            <Dimension> 0 0 0.00561 0.02806 0.28683 0.58367 0.91858 2.63890 4.96831</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00359 0.01797 0.18777 0.38024 0.59539 1.68274 3.13291</Dimension>
+                            <Dimension> 0 0 0.00526 0.02629 0.29488 0.59313 0.92105 2.52930 4.61212</Dimension>
+                            <Dimension> 0 0 0.02104 0.10519 0.46571 0.86729 1.30992 3.49099 6.32896</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00069 0.00345 0.18406 0.38607 0.60948 1.71712 3.16714</Dimension>
+                            <Dimension> 0 0 0.00484 0.02420 0.30901 0.62194 0.96299 2.60827 4.70335</Dimension>
+                            <Dimension> 0 0 0.00539 0.02693 0.44070 0.88726 1.36660 3.61181 6.38158</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00419 0.02094 0.19612 0.39442 0.61585 1.73285 3.21989</Dimension>
+                            <Dimension> 0 0 0.00628 0.03141 0.30389 0.61921 0.96415 2.63998 4.78956</Dimension>
+                            <Dimension> 0 0 0.00678 0.03392 0.44272 0.88665 1.36572 3.63336 6.46318</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00401 0.02003 0.19475 0.39297 0.61469 1.73652 3.23427</Dimension>
+                            <Dimension> 0 0 0.00442 0.02211 0.30394 0.61643 0.95958 2.63882 4.80866</Dimension>
+                            <Dimension> 0 0 0.01014 0.05072 0.45224 0.89250 1.37151 3.67496 6.59830</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00475 0.02375 0.19971 0.39935 0.62268 1.75277 3.26174</Dimension>
+                            <Dimension> 0 0 0.00930 0.04650 0.31345 0.61560 0.95296 2.65445 4.91923</Dimension>
+                            <Dimension> 0 0 0.01240 0.06200 0.45235 0.91513 1.41344 3.76182 6.67848</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00475 0.02375 0.19971 0.39935 0.62268 1.75277 3.26174</Dimension>
+                            <Dimension> 0 0 0.00930 0.04650 0.31345 0.61560 0.95296 2.65445 4.91923</Dimension>
+                            <Dimension> 0 0 0.01240 0.06200 0.45235 0.91513 1.41344 3.76182 6.67848</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.00523 0.02613 0.21968 0.43929 0.68494 1.92804 3.58791</Dimension>
+                            <Dimension> 0 0 0.01023 0.05115 0.34479 0.67716 1.04825 2.91989 5.41115</Dimension>
+                            <Dimension> 0 0 0.01364 0.06820 0.49758 1.00665 1.55478 4.13800 7.34633</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01326 0.06631 0.31268 0.58467 0.88230 2.32907 4.18588</Dimension>
+                            <Dimension> 0 0 0.01852 0.09259 0.49336 0.92827 1.39733 3.61496 6.37887</Dimension>
+                            <Dimension> 0 0 0.03415 0.17075 0.73791 1.34994 2.00682 5.08294 8.87681</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01787 0.08933 0.32676 0.59316 0.88854 2.35982 4.29469</Dimension>
+                            <Dimension> 0 0 0.02388 0.11939 0.51492 0.94658 1.41437 3.64677 6.45718</Dimension>
+                            <Dimension> 0 0 0.03387 0.16933 0.74819 1.37363 2.04563 5.19938 9.09827</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01177 0.05887 0.31094 0.58890 0.89275 2.36714 4.25587</Dimension>
+                            <Dimension> 0 0 0.02187 0.10937 0.50252 0.93379 1.40319 3.66206 6.53097</Dimension>
+                            <Dimension> 0 0 0.03783 0.18917 0.76570 1.39045 2.06343 5.23760 9.18338</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01311 0.06556 0.31099 0.58421 0.88523 2.36724 4.29396</Dimension>
+                            <Dimension> 0 0 0.01836 0.09180 0.50198 0.94794 1.42968 3.71441 6.57158</Dimension>
+                            <Dimension> 0 0 0.03462 0.17312 0.76210 1.39803 2.08090 5.28184 9.23389</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01591 0.07953 0.31434 0.58042 0.87777 2.37983 4.38218</Dimension>
+                            <Dimension> 0 0 0.02375 0.11874 0.51350 0.94841 1.42348 3.72534 6.66972</Dimension>
+                            <Dimension> 0 0 0.02924 0.14621 0.76565 1.42888 2.13590 5.40190 9.36856</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01591 0.07953 0.31434 0.58042 0.87777 2.37983 4.38218</Dimension>
+                            <Dimension> 0 0 0.02375 0.11874 0.51350 0.94841 1.42348 3.72534 6.66972</Dimension>
+                            <Dimension> 0 0 0.02924 0.14621 0.76565 1.42888 2.13590 5.40190 9.36856</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.01750 0.08749 0.34578 0.63846 0.96554 2.61781 4.82040</Dimension>
+                            <Dimension> 0 0 0.02612 0.13062 0.56485 1.04325 1.56583 4.09787 7.33669</Dimension>
+                            <Dimension> 0 0 0.03217 0.16083 0.84222 1.57177 2.34950 5.94209 10.3054</Dimension>
+                        </Dimension>
+                    </Dimension>
+                    <Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02407 0.12035 0.44299 0.79487 1.17597 2.99269 5.27711</Dimension>
+                            <Dimension> 0 0 0.03944 0.19721 0.72342 1.28912 1.89430 4.70981 8.15702</Dimension>
+                            <Dimension> 0 0 0.05240 0.26199 1.07821 1.93617 2.83588 6.85219 11.5364</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02461 0.12306 0.43729 0.78403 1.16328 3.00540 5.36772</Dimension>
+                            <Dimension> 0 0 0.04603 0.23015 0.73016 1.27802 1.87373 4.73508 8.36204</Dimension>
+                            <Dimension> 0 0 0.06466 0.32329 1.09339 1.91694 2.79392 6.83631 11.7338</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02533 0.12666 0.43231 0.77263 1.14762 2.99429 5.39567</Dimension>
+                            <Dimension> 0 0 0.03974 0.19870 0.72711 1.29750 1.90986 4.77896 8.31957</Dimension>
+                            <Dimension> 0 0 0.05209 0.26044 1.05225 1.89674 2.79391 6.90947 11.8680</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02204 0.11022 0.43231 0.78632 1.17225 3.03523 5.40897</Dimension>
+                            <Dimension> 0 0 0.04504 0.22518 0.74045 1.30298 1.91276 4.82447 8.49230</Dimension>
+                            <Dimension> 0 0 0.06516 0.32578 1.09384 1.92155 2.80892 6.95498 12.0556</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02734 0.13668 0.43908 0.77836 1.15451 3.02784 5.49113</Dimension>
+                            <Dimension> 0 0 0.04707 0.23536 0.74990 1.31315 1.92512 4.86008 8.57444</Dimension>
+                            <Dimension> 0 0 0.06916 0.34581 1.11023 1.93648 2.82456 6.99520 12.1551</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.02734 0.13668 0.43908 0.77836 1.15451 3.02784 5.49113</Dimension>
+                            <Dimension> 0 0 0.04707 0.23536 0.74990 1.31315 1.92512 4.86008 8.57444</Dimension>
+                            <Dimension> 0 0 0.06916 0.34581 1.11023 1.93648 2.82456 6.99520 12.1551</Dimension>
+                        </Dimension>
+                        <Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0 0 0 0 0 0 0</Dimension>
+                            <Dimension> 0 0 0.03007 0.15034 0.48299 0.85620 1.26996 3.33062 6.04025</Dimension>
+                            <Dimension> 0 0 0.05178 0.25890 0.82489 1.44447 2.11763 5.34609 9.43188</Dimension>
+                            <Dimension> 0 0 0.07608 0.38039 1.22125 2.13012 3.10701 7.69472 13.3707</Dimension>
+                        </Dimension>
+                    </Dimension>
+                </FunctionValues>
+            </Table>
+        </CustomTables>
+        <SemiconductorData type="MOSFET with Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>lookup('Eon',i,v,T,Rgon)*1e-3</Formula>
+                <CurrentAxis> -10 0 5 25 50 75 100 200 300</CurrentAxis>
+                <VoltageAxis> -10 0 400 600 800</VoltageAxis>
+                <TemperatureAxis> 25 75 125 175 200 200 1000</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.19325 0.32033 0.50450 0.71679 0.95721 2.20019 3.89323</Voltage>
+                        <Voltage> 0 0 0.37613 0.58917 0.89955 1.25890 1.66721 3.79013 6.69651</Voltage>
+                        <Voltage> 0 0 0.63872 0.95151 1.41084 1.94608 2.55724 5.76109 10.1797</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.17533 0.30166 0.48323 0.69108 0.92521 2.12451 3.74427</Voltage>
+                        <Voltage> 0 0 0.33377 0.55981 0.88365 1.25336 1.66895 3.79008 6.64522</Voltage>
+                        <Voltage> 0 0 0.47190 0.82815 1.33091 1.89751 2.52794 5.68801 9.86944</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.19369 0.31208 0.48580 0.68814 0.91907 2.12888 3.79638</Voltage>
+                        <Voltage> 0 0 0.29550 0.54370 0.89542 1.29320 1.73706 3.97315 6.94633</Voltage>
+                        <Voltage> 0 0 0.46869 0.85243 1.39083 1.99446 2.66334 5.99127 10.3631</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.18201 0.32338 0.52626 0.75821 1.01924 2.35404 4.15399</Voltage>
+                        <Voltage> 0 0 0.29408 0.57575 0.97250 1.41889 1.91491 4.39535 7.66993</Voltage>
+                        <Voltage> 0 0 0.44378 0.89567 1.52367 2.22183 2.99016 6.76513 11.6627</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.18138 0.33371 0.55179 0.80060 1.08015 2.50575 4.42315</Voltage>
+                        <Voltage> 0 0 0.35258 0.62974 1.02899 1.48688 2.00342 4.65605 8.24704</Voltage>
+                        <Voltage> 0 0 0.47010 0.87437 1.59814 2.38780 3.24335 7.32432 12.4594</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.18138 0.33371 0.55179 0.80060 1.08015 2.50575 4.42315</Voltage>
+                        <Voltage> 0 0 0.35258 0.62974 1.02899 1.48688 2.00342 4.65605 8.24704</Voltage>
+                        <Voltage> 0 0 0.47010 0.87437 1.59814 2.38780 3.24335 7.32432 12.4594</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.19952 0.36708 0.60697 0.88066 1.18817 2.75632 4.86546</Voltage>
+                        <Voltage> 0 0 0.38783 0.69272 1.13189 1.63557 2.20376 5.12166 9.07174</Voltage>
+                        <Voltage> 0 0 0.51711 0.96180 1.75796 2.62658 3.56768 8.05675 13.7053</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>lookup('Eoff',i,v,T,Rgoff)*1e-3</Formula>
+                <CurrentAxis> -10 0 5 25 50 75 100 200 300</CurrentAxis>
+                <VoltageAxis> -10 0 400 600 800</VoltageAxis>
+                <TemperatureAxis> 25 75 125 175 200 200 1000</TemperatureAxis>
+                <Energy scale="0.001">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.00029 0.00144 0.10084 0.21996 0.35881 1.11141 2.17955</Voltage>
+                        <Voltage> 0 0 0.00191 0.00954 0.15983 0.33743 0.54234 1.63509 3.16480</Voltage>
+                        <Voltage> 0 0 0.00254 0.01272 0.22687 0.48189 0.76950 2.24593 4.24392</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.02134 0.04268 0.09755 0.22033 0.36233 1.12244 2.18992</Voltage>
+                        <Voltage> 0 0 0.03527 0.07054 0.15967 0.34882 0.56367 1.67995 3.20727</Voltage>
+                        <Voltage> 0 0 0.04799 0.09598 0.21722 0.48247 0.77949 2.28529 4.29943</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.02154 0.04309 0.09830 0.22174 0.36494 1.13532 2.22184</Voltage>
+                        <Voltage> 0 0 0.03345 0.06691 0.15256 0.35071 0.57203 1.68918 3.17725</Voltage>
+                        <Voltage> 0 0 0.00025 0.00127 0.23141 0.49516 0.79254 2.31825 4.38189</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.02330 0.04660 0.10489 0.23008 0.37545 1.15872 2.26486</Voltage>
+                        <Voltage> 0 0 0.03612 0.07224 0.16258 0.35371 0.57201 1.71687 3.29638</Voltage>
+                        <Voltage> 0 0 0.05430 0.10860 0.24441 0.52415 0.83599 2.40430 4.48613</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.00212 0.01062 0.10907 0.22953 0.37200 1.16188 2.30380</Voltage>
+                        <Voltage> 0 0 0.00318 0.01592 0.16128 0.37411 0.61008 1.78527 3.33059</Voltage>
+                        <Voltage> 0 0 0.00510 0.02551 0.26076 0.53061 0.83508 2.39900 4.51665</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.00212 0.01062 0.10907 0.22953 0.37200 1.16188 2.30380</Voltage>
+                        <Voltage> 0 0 0.00318 0.01592 0.16128 0.37411 0.61008 1.78527 3.33059</Voltage>
+                        <Voltage> 0 0 0.00510 0.02551 0.26076 0.53061 0.83508 2.39900 4.51665</Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 0 0</Voltage>
+                        <Voltage> 0 0 0.00234 0.01168 0.11998 0.25249 0.40920 1.27807 2.53418</Voltage>
+                        <Voltage> 0 0 0.00350 0.01752 0.17740 0.41152 0.67109 1.96380 3.66365</Voltage>
+                        <Voltage> 0 0 0.00561 0.02806 0.28683 0.58367 0.91858 2.63890 4.96831</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss gate="on">
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> -300 -200 -100 -75 -50 -25 0 25 50 75 100 200 300</CurrentAxis>
+                <TemperatureAxis> -40 -25 0 25 100 125 150 175 200 1000</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> -2.395 -1.669 -0.889 -0.679 -0.462 -0.236 0.000 0.225 0.456 0.688 0.925 1.880 2.869</Temperature>
+                    <Temperature> -2.405 -1.655 -0.869 -0.662 -0.447 -0.228 0.000 0.221 0.443 0.674 0.901 1.847 2.854</Temperature>
+                    <Temperature> -2.532 -1.707 -0.881 -0.667 -0.450 -0.226 0.000 0.217 0.440 0.664 0.891 1.848 2.898</Temperature>
+                    <Temperature> -2.686 -1.777 -0.901 -0.680 -0.456 -0.231 0.000 0.227 0.456 0.690 0.929 1.935 3.087</Temperature>
+                    <Temperature> -3.811 -2.415 -1.184 -0.889 -0.594 -0.298 0.000 0.294 0.593 0.898 1.210 2.591 4.401</Temperature>
+                    <Temperature> -4.401 -2.768 -1.346 -1.009 -0.672 -0.337 0.000 0.335 0.673 1.019 1.376 2.967 5.122</Temperature>
+                    <Temperature> -5.027 -3.150 -1.525 -1.141 -0.761 -0.382 0.000 0.380 0.764 1.156 1.561 3.404 6.037</Temperature>
+                    <Temperature> -5.888 -3.694 -1.791 -1.338 -0.892 -0.445 0.000 0.441 0.889 1.347 1.821 4.013 7.324</Temperature>
+                    <Temperature> -6.497 -4.125 -2.009 -1.500 -1.000 -0.502 0.000 0.498 1.002 1.519 2.053 4.582 8.641</Temperature>
+                    <Temperature> -7.146 -4.537 -2.210 -1.650 -1.100 -0.552 0.000 0.548 1.103 1.671 2.258 5.040 9.506</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+            <ConductionLoss gate="off">
+                <ComputationMethod>Table only</ComputationMethod>
+                <CurrentAxis> -200 -175 -150 -125 -100 -75 -50 -25 -5 -2.5 -1 -0.1 -0.02 0</CurrentAxis>
+                <TemperatureAxis> -40 -25 0 25 100 125 150 175 200 1000</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> -7.458 -7.209 -6.938 -6.643 -6.314 -5.912 -5.423 -4.746 -4.087 -4.000 -3.948 -3.916 -3.913 0.000</Temperature>
+                    <Temperature> -7.308 -7.043 -6.763 -6.452 -6.110 -5.713 -5.229 -4.563 -3.916 -3.830 -3.779 -3.748 -3.745 0.000</Temperature>
+                    <Temperature> -7.133 -6.842 -6.546 -6.225 -5.869 -5.467 -4.977 -4.338 -3.731 -3.651 -3.603 -3.573 -3.571 0.000</Temperature>
+                    <Temperature> -6.943 -6.654 -6.340 -6.028 -5.657 -5.253 -4.780 -4.164 -3.580 -3.503 -3.457 -3.429 -3.426 0.000</Temperature>
+                    <Temperature> -6.548 -6.270 -5.978 -5.651 -5.304 -4.919 -4.456 -3.863 -3.306 -3.232 -3.188 -3.161 -3.159 0.000</Temperature>
+                    <Temperature> -6.390 -6.123 -5.846 -5.533 -5.202 -4.821 -4.386 -3.802 -3.240 -3.166 -3.121 -3.094 -3.091 0.000</Temperature>
+                    <Temperature> -6.272 -6.012 -5.737 -5.437 -5.108 -4.745 -4.305 -3.737 -3.200 -3.129 -3.087 -3.061 -3.058 0.000</Temperature>
+                    <Temperature> -6.191 -5.932 -5.659 -5.366 -5.035 -4.677 -4.248 -3.682 -3.142 -3.071 -3.028 -3.002 -2.999 0.000</Temperature>
+                    <Temperature> -6.131 -5.876 -5.599 -5.308 -4.988 -4.624 -4.196 -3.636 -3.103 -3.033 -2.990 -2.964 -2.962 0.000</Temperature>
+                    <Temperature> -6.071 -5.820 -5.540 -5.250 -4.942 -4.571 -4.144 -3.590 -3.064 -2.995 -2.953 -2.927 -2.925 0.000</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Cauer">
+                <RCElement R="0.014083" C="0.007222"/>
+                <RCElement R="0.027909" C="0.028068"/>
+                <RCElement R="0.054471" C="0.102582"/>
+                <RCElement R="0.057000" C="0.131083"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+            <Line>DISCLAIMER</Line>
+            <Line>This model is provided as is, where is, and with no warranty of any kind either</Line>
+            <Line>expressed or implied, including but not limited to any implied warranties of</Line>
+            <Line>merchantability and fitness for a particular purpose.</Line>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+            <Line></Line>
+            <Line></Line>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+            <Line>Wolfspeed SiC Module PLECS Library</Line>
+            <Line></Line>
+            <Line>	EDB010M12TM4</Line>
+            <Line>	Single Switch	(MOSFET with Diode Model)</Line>
+            <Line>	Version 3.3	Date: 10-29-2025</Line>
+            <Line></Line>
+            <Line>	Electrical Parameters</Line>
+            <Line>	Ron	= 0.0138	Ω</Line>
+            <Line>	Vf	= 3.572	V</Line>
+            <Line>	Rdio	= 0.0187	Ω</Line>
+            <Line></Line>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+            <Line></Line>
+            <Line></Line>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+            <Line>To find other WOLFSPEED SiC models, please visit: </Line>
+            <Line>https://www.wolfspeed.com/tools-and-support/power/ltspice-and-plecs-models/</Line>
+            <Line>-------------------------------------------------------------------------------------------------</Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>

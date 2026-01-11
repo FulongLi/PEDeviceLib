@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "manufacturer": "Wolfspeed",
+    "type": "Diode",
+    "material": "SiC",
+    "package_type": "discrete",
+    "part_number": "E3D08065G",
+    "author": "Fulong Li",
+    "date": "2026-01-11 19:32:51",
+    "source_file": "E3D08065G.xml",
+    "source_path": "SiC\\Wolfspeed\\Diodes\\E3D08065G.xml"
+  },
+  "library": {
+    "xmlns": "",
+    "version": "1.1"
+  },
+  "package": {
+    "class": "Diode",
+    "vendor": "Wolfspeed",
+    "partnumber": "E3D08065G",
+    "semiconductor_data": {
+      "type": "Diode",
+      "turn_on_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "turn_off_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "conduction_loss": {
+        "computation_method": "Table only",
+        "formula": "0.95 + (T*-1.2e-3) + i*(0.054 + (T*5.5e-4))",
+        "current_axis": [
+          -5.0,
+          0.0,
+          0.5,
+          1.0,
+          5.0,
+          10.0,
+          15.0,
+          19.9
+        ],
+        "temperature_axis": [
+          -55.0,
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          900.0
+        ],
+        "voltage_drop": {
+          "scale": 1.0,
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      }
+    },
+    "thermal_model": {
+      "type": "Cauer",
+      "rc_elements": [
+        {
+          "R": 0.046784253,
+          "C": 0.000214087
+        },
+        {
+          "R": 0.098365176,
+          "C": 0.00099566
+        },
+        {
+          "R": 0.892916629,
+          "C": 0.002456651
+        },
+        {
+          "R": 0.443230875,
+          "C": 0.023549147
+        }
+      ]
+    },
+    "comment": [
+      "Datasheet Rev1, 10-2020"
+    ]
+  }
+}

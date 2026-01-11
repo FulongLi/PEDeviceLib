@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "manufacturer": "Wolfspeed",
+    "type": "Diode",
+    "material": "SiC",
+    "package_type": "discrete",
+    "part_number": "C6D08065G",
+    "author": "Fulong Li",
+    "date": "2026-01-11 19:32:51",
+    "source_file": "C6D08065G.xml",
+    "source_path": "SiC\\Wolfspeed\\Diodes\\C6D08065G.xml"
+  },
+  "library": {
+    "xmlns": "",
+    "version": "1.1"
+  },
+  "package": {
+    "class": "Diode",
+    "vendor": "Wolfspeed",
+    "partnumber": "C6D08065G",
+    "semiconductor_data": {
+      "type": "Diode",
+      "turn_on_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "turn_off_loss": {
+        "computation_method": "Table only",
+        "current_axis": [
+          0.0
+        ],
+        "voltage_axis": [
+          0.0
+        ],
+        "temperature_axis": [
+          25.0
+        ],
+        "energy": {
+          "scale": 1.0,
+          "data": [
+            [
+              [
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "conduction_loss": {
+        "computation_method": "Table only",
+        "formula": "0.95 + (T*-1.2e-3) + i*(0.054 + (T*5.5e-4))",
+        "current_axis": [
+          -5.0,
+          0.0,
+          0.08,
+          0.5,
+          2.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0
+        ],
+        "temperature_axis": [
+          -55.0,
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          900.0
+        ],
+        "voltage_drop": {
+          "scale": 1.0,
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      }
+    },
+    "thermal_model": {
+      "type": "Cauer",
+      "rc_elements": [
+        {
+          "R": 0.101284161,
+          "C": 0.000101167
+        },
+        {
+          "R": 0.212790413,
+          "C": 0.000468332
+        },
+        {
+          "R": 0.900382518,
+          "C": 0.001067385
+        },
+        {
+          "R": 0.423115844,
+          "C": 0.010979834
+        }
+      ]
+    },
+    "comment": [
+      "Datasheet Rev. 0, 07-2021 ",
+      "It is customer's responsibility to verify the performance of the diode with an actual prototype. "
+    ]
+  }
+}
