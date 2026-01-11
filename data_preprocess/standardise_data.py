@@ -43,8 +43,19 @@ def parse_energy_or_voltage_drop(elem, data_type: str) -> Dict[str, Any]:
     
     temperature_data = []
     for temp_elem in elem.findall('Temperature'):
-        temp_data = parse_temperature_data(temp_elem)
-        temperature_data.append(temp_data)
+        # Check if this is Energy (has Voltage children) or VoltageDrop (direct text)
+        voltage_children = temp_elem.findall('Voltage')
+        if voltage_children:
+            # Energy structure: Temperature -> Voltage elements
+            temp_data = parse_temperature_data(temp_elem)
+            temperature_data.append(temp_data)
+        else:
+            # VoltageDrop structure: Temperature has direct text data
+            if temp_elem.text:
+                voltage_values = parse_axis(temp_elem.text)
+                temperature_data.append(voltage_values)
+            else:
+                temperature_data.append([])
     
     result['data'] = temperature_data
     return result
