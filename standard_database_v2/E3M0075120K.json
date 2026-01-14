@@ -1,0 +1,462 @@
+{
+  "device_id": "wolfspeed_e3m0075120k",
+  "identity": {
+    "manufacturer": "Wolfspeed",
+    "part_number": "E3M0075120K",
+    "family": "E3M",
+    "aliases": [],
+    "datasheet_url": null,
+    "lifecycle": "active"
+  },
+  "classification": {
+    "technology": "SiC_MOSFET",
+    "device_type": "MOSFET with Diode",
+    "polarity": "N",
+    "package_type": "TO-247-4",
+    "integration_level": "discrete"
+  },
+  "ratings": {
+    "vds_max": {
+      "value": 1200,
+      "unit": "V"
+    },
+    "id_max": null,
+    "tj_max": {
+      "value": 175,
+      "unit": "C"
+    },
+    "pd_max": null
+  },
+  "static": {
+    "rds_on": [
+      {
+        "value": 108.0,
+        "unit": "mohm",
+        "conditions": {
+          "tj": 25,
+          "vgs": 15
+        },
+        "typ_max": "typ"
+      }
+    ],
+    "vf_body_diode": [
+      {
+        "value": 3.783,
+        "unit": "V",
+        "conditions": {
+          "tj": 25
+        },
+        "typ_max": "typ"
+      }
+    ],
+    "vgs_th": null
+  },
+  "switching": {
+    "qg_total": null,
+    "ciss": null,
+    "coss": null,
+    "crss": null
+  },
+  "loss_curves": {
+    "eon": {
+      "computation_method": "Table and formula",
+      "data": [
+        {
+          "conditions": {
+            "vdc": 800.0,
+            "vgs": 15
+          },
+          "current_axis": {
+            "values": [
+              -1.0,
+              0.0,
+              5.42442,
+              10.6103,
+              15.3189,
+              20.2468208,
+              25.2601,
+              30.1271,
+              34.5451,
+              38.9592
+            ],
+            "unit": "A"
+          },
+          "temperature_axis": {
+            "values": [
+              25.0,
+              100.0,
+              150.0
+            ],
+            "unit": "C"
+          },
+          "energy": {
+            "unit": "mJ",
+            "data_by_temperature": {
+              "25.0": [
+                0.0,
+                0.0,
+                0.11217089,
+                0.159266006,
+                0.21521126,
+                0.27975428,
+                0.351642573,
+                0.431378461,
+                0.516447877,
+                0.609442894
+              ],
+              "100.0": [
+                0.0,
+                0.0,
+                0.123296631,
+                0.187205213,
+                0.258412445,
+                0.338654013,
+                0.427164726,
+                0.523743836,
+                0.625950271,
+                0.734464208
+              ],
+              "150.0": [
+                0.0,
+                0.0,
+                0.143346268,
+                0.228894541,
+                0.322099924,
+                0.422643367,
+                0.528607682,
+                0.642931195,
+                0.76060198,
+                0.888848018
+              ]
+            }
+          },
+          "quality": "original",
+          "source_ref": "plecs_model"
+        }
+      ],
+      "formula": "E/(0.0152*2.5 + 0.2598)*(0.0152*Rgon + 0.2598)"
+    },
+    "eoff": {
+      "computation_method": "Table and formula",
+      "data": [
+        {
+          "conditions": {
+            "vdc": 800.0,
+            "vgs": 15
+          },
+          "current_axis": {
+            "values": [
+              -1.0,
+              0.0,
+              5.42442,
+              10.6103,
+              15.3189,
+              20.2468208,
+              25.2601,
+              30.1271,
+              34.5451,
+              38.9592
+            ],
+            "unit": "A"
+          },
+          "temperature_axis": {
+            "values": [
+              25.0,
+              100.0,
+              150.0
+            ],
+            "unit": "C"
+          },
+          "energy": {
+            "unit": "mJ",
+            "data_by_temperature": {
+              "25.0": [
+                0.0,
+                0.0,
+                0.023348862,
+                0.028150885,
+                0.041455178,
+                0.063430412,
+                0.09010097,
+                0.120653511,
+                0.151731072,
+                0.185063917
+              ],
+              "100.0": [
+                0.0,
+                0.0,
+                0.026144799,
+                0.029625626,
+                0.046192588,
+                0.068166987,
+                0.097029919,
+                0.127802999,
+                0.161465723,
+                0.196623161
+              ],
+              "150.0": [
+                0.0,
+                0.0,
+                0.025214046,
+                0.029181207,
+                0.048689856,
+                0.075906873,
+                0.103811885,
+                0.137931502,
+                0.172144619,
+                0.210530178
+              ]
+            }
+          },
+          "quality": "original",
+          "source_ref": "plecs_model"
+        }
+      ],
+      "formula": "E/(0.0081*2.5 + 0.0395)*(0.0081*Rgoff + 0.0395)"
+    },
+    "vf": [
+      {
+        "gate": "on",
+        "computation_method": "Table only",
+        "current_axis": {
+          "values": [
+            -80.0,
+            -70.0,
+            -60.0,
+            -50.0,
+            -40.0,
+            -30.0,
+            -20.0,
+            -10.0,
+            0.0,
+            10.0,
+            20.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "unit": "A"
+        },
+        "temperature_axis": {
+          "values": [
+            -55.0,
+            25.0,
+            175.0
+          ],
+          "unit": "C"
+        },
+        "voltage_drop": {
+          "unit": "V",
+          "scale": 1.0,
+          "data_by_temperature": {
+            "-55.0": [
+              -4.236,
+              -3.776,
+              -3.321,
+              -2.852,
+              -2.369,
+              -1.863,
+              -1.317,
+              -0.71,
+              0.0,
+              0.7791,
+              1.631,
+              2.553,
+              3.587,
+              4.799
+            ],
+            "25.0": [
+              -5.217545696,
+              -4.464807421,
+              -3.844707081,
+              -3.235617587,
+              -2.622084615,
+              -2.003251329,
+              -1.368000851,
+              -0.704588597,
+              0.0,
+              0.734747518,
+              1.531308072,
+              2.406595494,
+              3.399333766,
+              4.559444681
+            ],
+            "175.0": [
+              -7.832929818,
+              -7.258693728,
+              -6.600369438,
+              -5.828468926,
+              -4.890294378,
+              -3.753902254,
+              -2.536312887,
+              -1.281192638,
+              0.0,
+              1.334074321,
+              2.769093277,
+              4.377163516,
+              6.251255633,
+              8.533969081
+            ]
+          }
+        },
+        "quality": "original",
+        "source_ref": "plecs_model"
+      },
+      {
+        "gate": "off",
+        "computation_method": "Table only",
+        "current_axis": {
+          "values": [
+            -80.0,
+            -70.0,
+            -60.0,
+            -50.0,
+            -40.0,
+            -30.0,
+            -20.0,
+            -10.0,
+            -5.0,
+            0.0,
+            1.0
+          ],
+          "unit": "A"
+        },
+        "temperature_axis": {
+          "values": [
+            -55.0,
+            25.0,
+            175.0
+          ],
+          "unit": "C"
+        },
+        "voltage_drop": {
+          "unit": "V",
+          "scale": 1.0,
+          "data_by_temperature": {
+            "-55.0": [
+              -9.722503621,
+              -9.344967412,
+              -8.939517219,
+              -8.498415726,
+              -8.005365704,
+              -7.433153021,
+              -6.727602391,
+              -5.745958701,
+              -4.988814227,
+              0.0,
+              0.0
+            ],
+            "25.0": [
+              -8.869617837,
+              -8.475237065,
+              -8.047321624,
+              -7.581426567,
+              -7.065782334,
+              -6.480596402,
+              -5.787807605,
+              -4.886652884,
+              -4.249835658,
+              0.0,
+              0.0
+            ],
+            "175.0": [
+              -7.786359124,
+              -7.439566853,
+              -7.065348931,
+              -6.656752407,
+              -6.207015972,
+              -5.695872091,
+              -5.091049672,
+              -4.302476915,
+              -3.738722384,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "quality": "original",
+        "source_ref": "plecs_model"
+      }
+    ]
+  },
+  "thermal": {
+    "model_type": "Cauer",
+    "rc_elements": [
+      {
+        "R": 0.13784,
+        "C": 0.0008088,
+        "R_unit": "K/W",
+        "C_unit": "J/K"
+      },
+      {
+        "R": 0.32433,
+        "C": 0.0039134,
+        "R_unit": "K/W",
+        "C_unit": "J/K"
+      },
+      {
+        "R": 0.21143,
+        "C": 0.017441,
+        "R_unit": "K/W",
+        "C_unit": "J/K"
+      },
+      {
+        "R": 0.20751,
+        "C": 0.13967,
+        "R_unit": "K/W",
+        "C_unit": "J/K"
+      }
+    ],
+    "rth_jc_total": {
+      "value": 0.8811,
+      "unit": "K/W"
+    }
+  },
+  "variables": {
+    "rgon": {
+      "description": "External gate resistance (turn-on)",
+      "default": 2.5,
+      "min": 2.5,
+      "max": 20.0,
+      "unit": "ohm"
+    },
+    "rgoff": {
+      "description": "External gate resistance (turn-off)",
+      "default": 2.5,
+      "min": 2.5,
+      "max": 20.0,
+      "unit": "ohm"
+    }
+  },
+  "models": {
+    "plecs": {
+      "available": true,
+      "version": "1.4",
+      "source": "Wolfspeed official"
+    },
+    "ltspice": {
+      "available": false
+    },
+    "spice": {
+      "available": false
+    }
+  },
+  "sources": {
+    "plecs_model": {
+      "file": "E3M0075120K.xml",
+      "path": "SiC\\Wolfspeed\\MOSFET with Diode\\MOSFETs\\E3M0075120K.xml",
+      "version": "1.4"
+    },
+    "datasheet": {
+      "revision": "Rev.1",
+      "date": "2025-09-18",
+      "url": null
+    }
+  },
+  "revision": {
+    "version": "2.0",
+    "author": "Fulong Li",
+    "date": "2026-01-14",
+    "notes": "Restructured from PLECS XML model"
+  }
+}

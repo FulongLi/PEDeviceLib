@@ -357,8 +357,16 @@ def convert_xml_to_json(xml_path: str, output_path: Optional[str] = None, author
         raise
 
 
-def process_duts_folder(duts_folder: str = 'DUTs', output_folder: Optional[str] = None, author: str = 'Fulong Li'):
-    """Process all XML files in the DUTs folder."""
+def process_duts_folder(duts_folder: str = 'DUTs', output_folder: Optional[str] = None, 
+                        author: str = 'Fulong Li', exclude_diode: bool = True):
+    """Process all XML files in the DUTs folder.
+    
+    Args:
+        duts_folder: Path to DUTs folder
+        output_folder: Output folder for JSON files
+        author: Author name for metadata
+        exclude_diode: If True, skip Diode type devices (default: True)
+    """
     duts_path = Path(duts_folder)
     
     if not duts_path.exists():
@@ -379,13 +387,25 @@ def process_duts_folder(duts_folder: str = 'DUTs', output_folder: Optional[str] 
         return
     
     print(f"Found {len(xml_files)} XML files to convert")
+    if exclude_diode:
+        print("Excluding Diode type devices")
     print(f"Output folder: {output_folder}")
     
     converted_count = 0
+    skipped_count = 0
     error_count = 0
     
     for xml_file in xml_files:
         try:
+            # First, parse to check device type
+            json_data = xml_to_json(str(xml_file), author)
+            device_type = json_data.get('metadata', {}).get('type', '')
+            
+            # Skip Diode if exclude_diode is True
+            if exclude_diode and device_type == 'Diode':
+                skipped_count += 1
+                continue
+            
             # Save all files directly in output folder (no subdirectories)
             # Use part number as filename, or fallback to original filename
             json_filename = xml_file.stem + '.json'
@@ -399,11 +419,15 @@ def process_duts_folder(duts_folder: str = 'DUTs', output_folder: Optional[str] 
                 output_file_path = output_path / json_filename
                 counter += 1
             
-            json_path = convert_xml_to_json(str(xml_file), str(output_file_path), author)
+            # Write JSON file
+            os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+            with open(output_file_path, 'w', encoding='utf-8') as f:
+                json.dump(json_data, f, indent=2, ensure_ascii=False)
+            
             converted_count += 1
             
             if converted_count % 50 == 0:
-                print(f"Converted {converted_count}/{len(xml_files)} files...")
+                print(f"Converted {converted_count} files...")
         
         except Exception as e:
             error_count += 1
@@ -411,6 +435,8 @@ def process_duts_folder(duts_folder: str = 'DUTs', output_folder: Optional[str] 
     
     print(f"\nConversion complete!")
     print(f"Successfully converted: {converted_count} files")
+    if exclude_diode and skipped_count > 0:
+        print(f"Skipped (Diode): {skipped_count} files")
     if error_count > 0:
         print(f"Errors: {error_count} files")
     print(f"All JSON files saved to: {output_folder}")
@@ -426,8 +452,10 @@ if __name__ == '__main__':
                         help='Output folder for JSON files (default: standard_database)')
     parser.add_argument('--author', type=str, default='Fulong Li',
                         help='Author name for metadata (default: Fulong Li)')
+    parser.add_argument('--include-diode', action='store_true',
+                        help='Include Diode type devices (default: exclude)')
     
     args = parser.parse_args()
     
-    process_duts_folder(args.duts, args.output, args.author)
+    process_duts_folder(args.duts, args.output, args.author, exclude_diode=not args.include_diode)
 
